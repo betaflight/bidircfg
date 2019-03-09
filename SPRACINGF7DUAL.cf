@@ -1,0 +1,20 @@
+#   PA0,    PA3,    PA2,    PC8,    PC6,    PC9,    PC7,    PB6,    PB7,    PB1,    PB0,    PA1,   PB10,   PB11,    PA8,    PA9,   PA10,   ADC
+#Score: 83 m: 10, dmatt: 0 emc: 0 lmc: 0, ledmc 1, odmac: 4 adcc: 0 ledc: 2 tc: 0 tcc: 0 nt 4 mxt 3
+#T05C1F1,T09C2F2,T09C1F2,T08C3F1,T08C1F1,T08C4F1,T08C2F1,T04C1F0,T04C2F0,T03C4F1,T03C3F1,T02C2F0,T02C3F0,T02C4F0,T01C1F0,T01C2F0,T01C3F0,ADC3 
+#D1S2O0, D0S0O0, D0S0O0, D2S4O1, D2S2O1, D2S7O0, D2S3O1, D1S0O0, D1S3O0, D1S2O0, D1S7O0, D0S0O0, D1S1O0, D1S6O1, D2S1O1, D2S6O0, D2S6O0, D2 S0 
+#Usable motors:  M1 M2 M3 M4 M5 M6 M7 M8 M9 M10
+
+timer c06 1
+timer b11 0
+timer a08 0
+timer a09 0
+timer a10 0
+
+dma pin c06 1
+dma pin b11 1
+dma pin a08 1
+dma pin a09 0
+dma pin a10 0
+
+dma adc 3 0
+
