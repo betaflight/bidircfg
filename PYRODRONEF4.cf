@@ -24,3 +24,4 @@ set motor_pwm_protocol=DSHOT600
 set gyro_sync_denom = 2
 set pid_process_denom = 1
 
+save
