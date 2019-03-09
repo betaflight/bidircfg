@@ -17,3 +17,8 @@ set d_min_roll=27
 set d_min_boost_gain=35
 
 set debug_mode=rpm_filter
+
+set motor_pwm_protocol=DSHOT600
+set gyro_sync_denom = 2
+set pid_process_denom = 1
+
