@@ -1,0 +1,17 @@
+#  PE13,    PB0,    PB1,    PE9,   PE11,   PD12,   PB10,   PB11,    PC6,    PC7,    PA3,    PA2,   ADC
+#Score: 208 m: 4, dmatt: 0 emc: 0 lmc: 0, ledmc 0, odmac: 2 adcc: 0 ledc: 0 tc: 20 tcc: 0 nt 6 mxt 2
+#T01C3F0,T03C3F1,T03C4F1,T01C1F0,T01C2F0,T04C1F0,T02C3F0,T02C4F0,T08C1F1,T08C2F1,T05C4F1,T09C1F2,ADC1 
+#D2S6O1, D1S7O0, D1S2O0, D2S1O1, D2S2O1, D1S0O0, D1S1O0, D1S6O1, D2S2O0, D2S3O1, D1S3O1, D0S0O0, D2 S0 
+#Usable motors:  M1 M2 M3 M4
+
+
+timer e09 0
+timer b11 0
+timer a03 1
+
+dma pin e09 1
+dma pin b11 1
+dma pin a03 1
+
+dma adc 1 0
+

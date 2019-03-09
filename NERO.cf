@@ -1,0 +1,17 @@
+#   PC7,    PA0,    PA1,    PA2,    PA3,    PB0,    PB1,    PC8,    PC9,   ADC
+#Score: 160 m: 8, dmatt: 0 emc: 0 lmc: 0, ledmc 0, odmac: 0 adcc: 0 ledc: 1 tc: 12 tcc: 0 nt 1 mxt 1
+#T08C2F1,T02C1F0,T05C2F1,T02C3F0,T02C4F0,T03C3F1,T03C4F1,T08C3F1,T08C4F1,ADC1 
+#D2S3O1, D1S5O0, D1S4O0, D1S1O0, D1S6O1, D1S7O0, D1S2O0, D2S2O0, D2S7O0, D2 S0 
+#Usable motors:  M1 M2 M3 M4 M5 M6 M7 M8
+
+
+timer c07 1
+timer a00 0
+timer a02 0
+timer a03 0
+
+dma pin c07 1
+dma pin a00 0
+dma pin a02 0
+dma pin a03 1
+
