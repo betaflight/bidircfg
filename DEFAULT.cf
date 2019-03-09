@@ -1,17 +1,3 @@
-timer a09 0
-timer a08 0 
-timer c09 0
-timer c08 0
-timer c06 0 
-timer c07 1
-
-dma pin a09 1
-dma pin a08 1 
-dma pin c09 0
-dma pin c08 0
-dma pin c06 0 
-dma pin c07 0
-
 set scheduler_optimize_rate=on
 set dshot_burst=off
 set dshot_bidir=on
