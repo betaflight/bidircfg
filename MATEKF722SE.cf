@@ -1,0 +1,28 @@
+timer b04 0
+timer b05 0
+timer b00 1
+timer b01 1
+timer a15 0
+timer b03 0
+timer b06 0
+timer b07 0
+timer a08 0
+timer a03 1
+timer a02 2
+timer a01 1
+timer a00 1
+
+dma adc 1 0
+dma pin b04 0
+dma pin b05 0
+dma pin b00 0
+dma pin b01 0
+dma pin a15 0
+dma pin b03 0
+dma pin b06 0
+dma pin b07 0
+dma pin a08 2
+dma pin a03 0
+dma pin a02 0
+dma pin a01 0
+dma pin a00 0
