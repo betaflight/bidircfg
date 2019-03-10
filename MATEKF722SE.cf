@@ -1,3 +1,5 @@
+# SPI 3 TX for SDCARD conflicts witn M2
+
 timer a03 1
 dma pin a03 0
 set scheduler_optimize_rate=on

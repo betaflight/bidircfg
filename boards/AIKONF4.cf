@@ -5,3 +5,8 @@ timer c07 1
 timer c08 0
 timer c09 0
 
+timer b00 none
+timer b01 none
+dma pin b00 none
+dma pin b01 none
+
