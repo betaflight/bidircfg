@@ -1,5 +1,6 @@
 # m1 - m4 usable
 timer b00 1
+dma pin b00 0
 set scheduler_optimize_rate=on
 set dshot_burst=off
 set dshot_bidir=on
