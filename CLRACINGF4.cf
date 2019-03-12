@@ -2,11 +2,11 @@
 
 timer b00 1
 timer b01 1
-dma pin b00 0
-dma pin b01 0
-
 timer b04 none
 timer b08 none
+
+dma pin b00 0
+dma pin b01 0
 dma pin b04 none
 dma pin b08 none
 
