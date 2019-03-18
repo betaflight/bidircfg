@@ -3,34 +3,20 @@
 # timer and DMA changes for this target. These will ensure that your
 # quad can receive telemetry frames on the motor signal lines.
 
-timer a08 0
-timer c06 1
-timer c07 1
-timer b14 1
-#timer b00 1
-timer a00 0
-timer c08 1
-timer a01 0
-timer c09 1
-timer b01 1
-timer b15 1
-timer b08 0
-timer b09 0
+#   PA2,    PC6,    PA0,    PB8,    PB6,    PB7,    PC7,    PB3,   ADC
+#Score: 10 m: 6, dmatt: 0 emc: 0 lmc: 0, ledmc 0, odmac: 1 adcc: 0 ledc: 0 tc: 0 tcc: 0 nt 2 mxt 1
+#T09C1F2,T03C1F0,T05C1F1,T04C3F1,T04C1F0,T04C2F0,T03C2F0,T02C2F0,ADC2 
+#D0S0O0, D1S4O0, D1S2O0, D1S7O0, D1S0O0, D1S3O0, D1S5O0, D1S6O0, D2 S2 
+#Usable motors:  M1 M2 M3 M4 M5 M6
 
-dma adc 1 0
-dma pin a08 0
-dma pin c06 1
-dma pin c07 1
-dma pin b14 0
-#dma pin b00 0
-dma pin a00 0
-dma pin c08 1
-dma pin a01 0
-dma pin c09 0
-dma pin b01 0
-dma pin b15 0
-dma pin b08 0
-dma pin b09 0
+timer c06
+timer c07
+timer b03
+
+dma pin c06 0
+dma pin c07 0
+dma pin b03 0
+
 
 # set looptime to 4k to have enough computational time
 
@@ -86,6 +72,6 @@ set d_min_boost_gain=35
 # higher D and will increase noise. Stick sharpness can be increased
 # using FF to compensate.
 
-set d_min_pitch=29
-set d_min_roll=27
+# set d_min_pitch=29
+# set d_min_roll=27
 

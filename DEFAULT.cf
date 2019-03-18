@@ -1,25 +1,63 @@
+# To enable RPM filtering, first apply these settings
+
+# timer and DMA changes for this target. These will ensure that your
+# quad can receive telemetry frames on the motor signal lines.
+
+
+# set looptime to 4k to have enough computational time
+
+set gyro_sync_denom = 2
+set pid_process_denom = 1
+
+# works most reliably with DShot600
+
+set motor_pwm_protocol=DSHOT600
+
+# basic settings required to enable rpm filtering:
+
 set scheduler_optimize_rate=on
 set dshot_burst=off
 set dshot_bidir=on
 
-set dyn_notch_width_percent = 0
-set dyn_notch_range = medium
-set dyn_notch_q = 250
-
-set gyro_lowpass_hz = 150
-set dyn_lpf_gyro_min_hz = 150
-set dyn_lpf_gyro_max_hz = 575
-
-set dterm_lowpass2_hz = 0
-
-set d_min_pitch=29
-set d_min_roll=27
-set d_min_boost_gain=35
+# enable debugging of rpm related settings (optional)
 
 set debug_mode=rpm_filter
 
-set motor_pwm_protocol=DSHOT600
-set gyro_sync_denom = 2
-set pid_process_denom = 1
+# reconfigure dynamic notch filter to focus on narrow frame resonances
+# since motor noise will already be eliminated by the rpm filter.
 
-save
+set dyn_notch_width_percent = 0
+set dyn_notch_q = 250
+
+# turn off dterm lowpass 2 to reduce delay
+
+set dterm_lowpass2_hz = 0
+
+# turn off 1st gyro lpf and dynamic gyro lpf to reduce delay
+
+set gyro_lowpass_hz = 0
+set dyn_lpf_gyro_min_hz = 0
+
+# Enable static gyro lowpass filter 2 at 150hz pt1 on gyro to
+# eliminate any broadband residual noise.  your quad might not need
+# this - if motors are cold try removing it.
+
+set gyro_lowpass2_hz = 150
+set gyro_lowpass2_type = PT1
+
+# Increase the d_min boost_gain to ramp up D faster when prop wash is
+# encountered. This change can cause stick feel to change a bit due to
+# higher D and will increase noise. Stick sharpness can be increased
+# using FF to compensate.
+
+set d_min_boost_gain=35
+
+######################################################################
+# The following settings increase d_min to allow a faster D response to
+# prop wash. These changes can cause stick feel to change a bit due to
+# higher D and will increase noise. Stick sharpness can be increased
+# using FF to compensate.
+
+set d_min_pitch=29
+set d_min_roll=27
+

@@ -86,6 +86,6 @@ set d_min_boost_gain=35
 # higher D and will increase noise. Stick sharpness can be increased
 # using FF to compensate.
 
-set d_min_pitch=29
-set d_min_roll=27
+# set d_min_pitch=29
+# set d_min_roll=27
 

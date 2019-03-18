@@ -3,34 +3,13 @@
 # timer and DMA changes for this target. These will ensure that your
 # quad can receive telemetry frames on the motor signal lines.
 
-timer a08 0
-timer c06 1
-timer c07 1
-timer b14 1
-#timer b00 1
-timer a00 0
-timer c08 1
-timer a01 0
-timer c09 1
-timer b01 1
-timer b15 1
-timer b08 0
-timer b09 0
+timer C06 0
+timer C07 1
 
-dma adc 1 0
-dma pin a08 0
-dma pin c06 1
-dma pin c07 1
-dma pin b14 0
-#dma pin b00 0
-dma pin a00 0
-dma pin c08 1
-dma pin a01 0
-dma pin c09 0
-dma pin b01 0
-dma pin b15 0
-dma pin b08 0
-dma pin b09 0
+dma pin A10 1
+dma pin A08 2
+dma pin C08 1
+
 
 # set looptime to 4k to have enough computational time
 
@@ -86,6 +65,6 @@ set d_min_boost_gain=35
 # higher D and will increase noise. Stick sharpness can be increased
 # using FF to compensate.
 
-set d_min_pitch=29
-set d_min_roll=27
+# set d_min_pitch=29
+# set d_min_roll=27
 

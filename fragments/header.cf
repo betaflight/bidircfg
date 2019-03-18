@@ -1,0 +1,5 @@
+# To enable RPM filtering, first apply these settings
+
+# timer and DMA changes for this target. These will ensure that your
+# quad can receive telemetry frames on the motor signal lines.
+

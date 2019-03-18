@@ -3,7 +3,7 @@
 for f in $(ls boards);
 do
     rm -f $f
-    cat boards/$f settings.cf > $f
+    cat fragments/header.cf boards/$f fragments/settings.cf | sed 's/@//g' > $f.cf
+    cat fragments/header.cf boards/$f fragments/settings.cf | sed 's/@/# /g' > $f-upgrade.cf
 done
 
-cp DEFAULT.cf ANYFCF7.cf
