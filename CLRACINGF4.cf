@@ -15,8 +15,7 @@ dma pin b01 0
 dma pin b04 none
 dma pin b08 none
 
-
-
+resource beeper 1 none
 
 # set looptime to 4k to have enough computational time
 
