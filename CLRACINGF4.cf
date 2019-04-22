@@ -1,5 +1,9 @@
 # To enable RPM filtering, first apply these settings
 
+#  get your beeper working correctly
+
+set beeper_frequency=0
+
 # timer and DMA changes for this target. These will ensure that your
 # quad can receive telemetry frames on the motor signal lines.
 
@@ -14,8 +18,6 @@ dma pin b00 0
 dma pin b01 0
 dma pin b04 none
 dma pin b08 none
-
-resource beeper 1 none
 
 # set looptime to 4k to have enough computational time
 
