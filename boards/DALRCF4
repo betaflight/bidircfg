@@ -1,6 +1,7 @@
 timer C06 0
 timer C07 1
 
+dma pin C06 0
 dma pin A10 1
 dma pin A08 2
 dma pin C08 1
