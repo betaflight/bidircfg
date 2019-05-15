@@ -1,0 +1,3 @@
+timer b01 1
+dma pin b01 0
+dma pin a00 none
