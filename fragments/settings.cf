@@ -24,6 +24,11 @@ set debug_mode=rpm_filter
 set dyn_notch_width_percent = 0
 set dyn_notch_q = 250
 
+# set dterm lowpass 1
+
+set dyn_lpf_dterm_min_hz = 150
+set dyn_lpf_dterm_max_hz = 250
+
 # turn off dterm lowpass 2 to reduce delay
 
 set dterm_lowpass2_hz = 0
