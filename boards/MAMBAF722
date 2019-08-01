@@ -1,0 +1,4 @@
+dma pin a09 1
+dma pin a08 1 
+dma pin c09 0
+dma pin c08 1
