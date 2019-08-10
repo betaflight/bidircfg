@@ -21,7 +21,7 @@ set pid_process_denom = 1
 
 set motor_pwm_protocol=DSHOT300
 
-# basic settings required to enable rpm filtering:
+# enable debugging for noise assessment
 
 set scheduler_optimize_rate=on
 set dshot_burst=off
