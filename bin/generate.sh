@@ -7,3 +7,4 @@ do
     cat fragments/header.cf boards/$f fragments/settings.cf | sed 's/@/# /g' > $f-upgrade.cf
 done
 
+cat fragments/bitbang.cf > BITBANG-upgrade.cf
